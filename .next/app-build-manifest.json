@@ -15,20 +15,15 @@
       "static/chunks/main-app.js",
       "static/chunks/app/reviews/page.js"
     ],
-    "/reviews/stardew/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/reviews/stardew/page.js"
-    ],
     "/reviews/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/reviews/layout.js"
     ],
-    "/reviews/hellowknight/page": [
+    "/about/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/reviews/hellowknight/page.js"
+      "static/chunks/app/about/page.js"
     ]
   }
 }
