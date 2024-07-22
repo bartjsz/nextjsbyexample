@@ -7,3 +7,7 @@ https://github.com/mirkonasato/next-reviews
 //
 nested layouts
 https://www.udemy.com/course/nextjs-by-example/learn/lecture/37952926#overview
+
+server components and client using new app router 'use client' directive
+https://www.udemy.com/course/nextjs-by-example/learn/lecture/37952796#overview
+https://react.dev/reference/rsc/server-components

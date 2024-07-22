@@ -1,6 +1,7 @@
 // const HomePage: React.FC = () => {} ;
 
 export default function HomePage() {
+  console.log("[HomePage] rendering");
   return (
     <>
       <h1>indie gamer</h1>
