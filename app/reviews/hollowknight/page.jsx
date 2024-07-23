@@ -1,6 +1,6 @@
 // const HomePage: React.FC = () => {} ;
 
-export default function HellowKnightPage() {
+export default function HollowKnightPage() {
   return (
     <>
       <h1>hello knight</h1>

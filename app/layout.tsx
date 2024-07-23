@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import Link from "next/link";
+import "./globals.css";
 
 interface LayoutProps {
   children: ReactNode;
@@ -27,7 +28,12 @@ export default function RootLayout({ children }: LayoutProps) {
           </nav>
         </header>
         <main>{children}</main>
-        <footer style={{ border: "solid blue 1px" }}>[footer]</footer>
+        <footer style={{ border: "solid blue 1px" }}>
+          game data and images of{" "}
+          <a href="https://rawg.io" target="_blank">
+            rawg
+          </a>
+        </footer>
       </body>
     </html>
   );
