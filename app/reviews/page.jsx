@@ -1,6 +1,6 @@
 // const HomePage: React.FC = () => {} ;
 import Link from "next/link";
-import Heading from "../../components/Heading";
+import Heading from "@/components/Heading";
 
 export default function ReviewsPage() {
   console.log("[HomePage] rendering");

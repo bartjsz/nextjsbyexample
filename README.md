@@ -42,3 +42,13 @@ add the tailwind directives 3 of them from site to global.css
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+for typescript this path compiler config would need to be done in tsconfig.
+
+<!-- {
+  "compilerOptions": {
+    "paths": {
+      "@/*": ["./*"]
+    }
+  }
+} -->

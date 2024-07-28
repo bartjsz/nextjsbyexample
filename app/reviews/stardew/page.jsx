@@ -1,5 +1,5 @@
 // const HomePage: React.FC = () => {} ;
-import Heading from "../../../components/Heading";
+import Heading from "@/components/Heading";
 
 export default function Stardew() {
   return (
