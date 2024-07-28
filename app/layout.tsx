@@ -9,10 +9,10 @@ interface LayoutProps {
 export default function RootLayout({ children }: LayoutProps) {
   return (
     <html lang="en">
-      <body>
+      <body className="flex flex-col px-4 py-2 min-h-screen">
         <header style={{ border: "solid blue 1px" }}>
           <nav>
-            <ul>
+            <ul className="flex gap-2">
               <li>
                 <Link href="/">Home</Link>
               </li>
@@ -27,9 +27,9 @@ export default function RootLayout({ children }: LayoutProps) {
             </ul>
           </nav>
         </header>
-        <main>{children}</main>
-        <footer style={{ border: "solid blue 1px" }}>
-          game data and images of{" "}
+        <main className="grow py-3">{children}</main>
+        <footer className="border-t py-3 text-center text-xs">
+          footer game data and images of{" "}
           <a href="https://rawg.io" target="_blank">
             rawg
           </a>

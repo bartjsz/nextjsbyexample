@@ -20,15 +20,23 @@ npm install --save-dev tailwindcss postcss autoprefixer
 npx tailwindcss init --postcss
 
 https://tailwindcss.com/docs/installation
+https://nextjs.org/docs/app/building-your-application/styling/tailwind-css
 
 <!-- /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [["./app/**/*.{jsx,tsx}", "./components/**/*.{jsx,tsx}"]],
+  content: [
+    './app/**/*.{js,ts,jsx,tsx,mdx}', // Note the addition of the `app` directory.
+    './pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/*.{js,ts,jsx,tsx,mdx}',
+
+    // Or if using `src` directory:
+    './src/**/*.{js,ts,jsx,tsx,mdx}',
+  ],
   theme: {
     extend: {},
   },
   plugins: [],
-}; -->
+} -->
 
 add the tailwind directives 3 of them from site to global.css
 @tailwind base;
