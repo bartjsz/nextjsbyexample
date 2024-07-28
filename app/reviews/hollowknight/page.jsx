@@ -1,9 +1,10 @@
 // const HomePage: React.FC = () => {} ;
+import Heading from "../../../components/Heading";
 
 export default function HollowKnightPage() {
   return (
     <>
-      <h1>hello knight</h1>
+      <Heading>hallow knight</Heading>
       <p>this will be the review for hello knight</p>
     </>
   );

@@ -1,11 +1,12 @@
 // const HomePage: React.FC = () => {} ;
 import Link from "next/link";
+import Heading from "../../components/Heading";
 
 export default function ReviewsPage() {
   console.log("[HomePage] rendering");
   return (
     <>
-      <h1>Reviews</h1>
+      <Heading>Reviews</Heading>
       <ul>
         <li>
           <Link href="/reviews/hollowknight">hollow knight</Link>

@@ -1,9 +1,10 @@
 // const HomePage: React.FC = () => {} ;
+import Heading from "../../../components/Heading";
 
 export default function Stardew() {
   return (
     <>
-      <h1>stardew valley</h1>
+      <Heading>stardew valley</Heading>
       <p>this will be the review for stardew valley</p>
     </>
   );

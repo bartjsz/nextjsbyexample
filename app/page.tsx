@@ -1,10 +1,11 @@
 // const HomePage: React.FC = () => {} ;
+import Heading from "../components/Heading";
 
 export default function HomePage() {
   console.log("[HomePage] rendering");
   return (
     <>
-      <h1>indie gamer</h1>
+      <Heading>Indie Gamer</Heading>
       <p>only indie gamer stuff</p>
     </>
   );
