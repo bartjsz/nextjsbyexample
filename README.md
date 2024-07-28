@@ -52,3 +52,10 @@ for typescript this path compiler config would need to be done in tsconfig.
     }
   }
 } -->
+
+<!-- this page still bugged out but read below -->
+
+C:\dev\manualinstallnext\app\page.tsx
+
+//todo @ import not working module path alias tsconfig.json or jsconfig.json
+// but create next app tool will automatically config path for you
