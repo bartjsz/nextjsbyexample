@@ -14,3 +14,23 @@ https://react.dev/reference/rsc/server-components
 
 prefetch
 https://www.udemy.com/course/nextjs-by-example/learn/lecture/37952810#overview
+
+npm install --save-dev tailwindcss postcss autoprefixer
+
+npx tailwindcss init --postcss
+
+https://tailwindcss.com/docs/installation
+
+<!-- /** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [["./app/**/*.{jsx,tsx}", "./components/**/*.{jsx,tsx}"]],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}; -->
+
+add the tailwind directives 3 of them from site to global.css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
