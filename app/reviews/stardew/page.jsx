@@ -1,23 +1,9 @@
 // const HomePage: React.FC = () => {} ;
-import { readFile } from "node:fs/promises";
-
-import { marked } from "marked";
 import Heading from "../../../components/Heading";
-import matter from "gray-matter";
+import { getReview } from "../../../lib/reviews";
 
-async function getReview() {
-  const text = await readFile("./app/stardew-valley.md", "utf8");
-
-  const {
-    content,
-    data: { title, date, image },
-  } = matter(text);
-  const body = marked(content, { headIds: false, mangle: false });
-  return { title, date, image, body };
-}
-
-export default async function Stardew() {
-  const review = await getReview();
+export default async function Stardew(slug) {
+  const review = await getReview("stardew-valley");
 
   return (
     <>
