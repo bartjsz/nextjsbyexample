@@ -1,11 +1,24 @@
 // const HomePage: React.FC = () => {} ;
-import Heading from "@/components/Heading";
+import { promises as fs } from "fs";
+import Heading from "../../../components/Heading";
 
-export default function Stardew() {
+export default async function Stardew() {
+  const text = await fs.readFile(
+    process.cwd() + "/app/stardew-valley.md",
+    "utf8"
+  );
+
   return (
     <>
       <Heading>stardew valley</Heading>
-      <p>this will be the review for stardew valley</p>
+      <img
+        src="/images/stardew-valley.jpg"
+        alt=""
+        width="640"
+        height="360"
+        className="mb-2 rounded"
+      />
+      <p>{text}</p>
     </>
   );
 }

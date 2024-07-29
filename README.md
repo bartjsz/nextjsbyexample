@@ -59,3 +59,8 @@ C:\dev\manualinstallnext\app\page.tsx
 
 //todo @ import not working module path alias tsconfig.json or jsconfig.json
 // but create next app tool will automatically config path for you
+
+// nextjs optimise image aspect ratio learn. and learn old css way for aspect ratio for website responsiveness
+
+//
+google fonts if you use their link code you are making request to their servers so this is a privacy concern
