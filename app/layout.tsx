@@ -17,12 +17,12 @@ export default function RootLayout({ children }: LayoutProps) {
           <NavBar />
         </header>
         <main className="grow py-3">{children}</main>
-        <footer className="border-t py-3 text-center text-xs">
+        <footer className="text-slate-500 border-t py-3 text-center text-xs">
           footer game data and images of{" "}
           <a
             href="https://rawg.io"
             target="_blank"
-            className="text-orange-800 hover:underline"
+            className="text-orange-800  hover:underline"
           >
             rawg
           </a>

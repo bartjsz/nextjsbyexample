@@ -64,3 +64,15 @@ C:\dev\manualinstallnext\app\page.tsx
 
 //
 google fonts if you use their link code you are making request to their servers so this is a privacy concern
+
+fileStream from node homework
+C:\dev\manualinstallnext\app\reviews\stardew\page.jsx
+https://vercel.com/guides/loading-static-file-nextjs-api-route
+
+<!-- -->
+
+npm install marked
+
+<!-- https://tailwindcss.com/docs/plugins -->
+
+npm install -D @tailwindcss/typography
