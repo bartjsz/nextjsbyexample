@@ -1,30 +1,39 @@
 // const HomePage: React.FC = () => {} ;
-import { promises as fs } from "fs";
+import { readFile } from "node:fs/promises";
+
 import { marked } from "marked";
 import Heading from "../../../components/Heading";
 import matter from "gray-matter";
 
-async function getReview() {
-  const text = await fs.readFile(
-    process.cwd() + "/app/stardew-valley.md",
-    "utf8"
-  );
-  const body = marked(text, { headerIds: false, mangle: false });
-  const title = "stardew valley";
-  const date = new Date().toDateString();
-  const image = "/images/stardew-valley.jpg"
-  return {title, date, image, body}
-}
+// async function getReview() {
+//   const text = await readFile("./app/stardew-valley.md", "utf8");
+//   // console.log("text", text);
+
+//   const {
+//     content,
+//     data: { title, date, image },
+//   } = matter(text);
+//   const html = marked(content);
+//   return html;
+// }
 
 export default async function Stardew() {
-  const review = await getReview();
+  // const review = await getReview();
+  const text = await readFile("./app/stardew-valley.md", "utf8");
+  // console.log("text", text);
+
+  const {
+    content,
+    data: { title, date, image },
+  } = matter(text);
+  const html = marked(content);
 
   return (
     <>
-      <Heading>{review.title}</Heading>
-      <p className="italic pb-2">{review.date}</p>
+      <Heading>{title}</Heading>
+      <p className="italic pb-2">{date}</p>
       <img
-        src={review.image}
+        src={image}
         alt=""
         width="640"
         height="360"
@@ -33,9 +42,7 @@ export default async function Stardew() {
 
       {/* dont do this in projects */}
       <article
-        dangerouslySetInnerHTML={{
-          __html: review.body,
-        }}
+        dangerouslySetInnerHTML={{ __html: html }}
         className="max-w-screen-sm prose prose-slate"
       />
     </>
