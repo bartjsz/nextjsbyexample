@@ -1,3 +1,4 @@
 {
+  "/page": "app/page.js",
   "/reviews/stardew/page": "app/reviews/stardew/page.js"
 }

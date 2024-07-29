@@ -11,7 +11,7 @@ async function getReview() {
   );
   const body = marked(text, { headerIds: false, mangle: false });
   const title = "stardew valley";
-  const date = Date.now();
+  const date = new Date().toDateString();
   const image = "/images/stardew-valley.jpg"
   return {title, date, image, body}
 }
