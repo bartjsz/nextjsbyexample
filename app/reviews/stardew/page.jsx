@@ -5,35 +5,26 @@ import { marked } from "marked";
 import Heading from "../../../components/Heading";
 import matter from "gray-matter";
 
-// async function getReview() {
-//   const text = await readFile("./app/stardew-valley.md", "utf8");
-//   // console.log("text", text);
-
-//   const {
-//     content,
-//     data: { title, date, image },
-//   } = matter(text);
-//   const html = marked(content);
-//   return html;
-// }
-
-export default async function Stardew() {
-  // const review = await getReview();
+async function getReview() {
   const text = await readFile("./app/stardew-valley.md", "utf8");
-  // console.log("text", text);
 
   const {
     content,
     data: { title, date, image },
   } = matter(text);
-  const html = marked(content);
+  const body = marked(content, { headIds: false, mangle: false });
+  return { title, date, image, body };
+}
+
+export default async function Stardew() {
+  const review = await getReview();
 
   return (
     <>
-      <Heading>{title}</Heading>
-      <p className="italic pb-2">{date}</p>
+      <Heading>{review.title}</Heading>
+      <p className="italic pb-2">{review.date}</p>
       <img
-        src={image}
+        src={review.image}
         alt=""
         width="640"
         height="360"
@@ -42,7 +33,7 @@ export default async function Stardew() {
 
       {/* dont do this in projects */}
       <article
-        dangerouslySetInnerHTML={{ __html: html }}
+        dangerouslySetInnerHTML={{ __html: review.body }}
         className="max-w-screen-sm prose prose-slate"
       />
     </>
