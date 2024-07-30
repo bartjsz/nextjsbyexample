@@ -2,7 +2,7 @@
 import Heading from "../../../components/Heading";
 
 export default function ReviewPage({ params: { slug } }) {
-  console.log("[ReviewPage] props:", slug);
+  // console.log("[ReviewPage] props:", slug);
   return (
     <>
       <Heading>hallow knight</Heading>

@@ -84,3 +84,6 @@ https://www.npmjs.com/package/gray-matter/v/1.2.3
 <!-- Step 4: Use The JSON Data
 https://vercel.com/guides/loading-static-file-nextjs-api-route
 import { readFile } from "node:fs/promises"; -->
+
+check which version it came out
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/endsWith

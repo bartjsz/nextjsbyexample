@@ -3,7 +3,7 @@ import Heading from "../../../components/Heading";
 import { getReview } from "../../../lib/reviews";
 
 export default async function Stardew(slug) {
-  const review = await getReview("stardew-valley");
+  const review = await getReview("stardew");
 
   return (
     <>

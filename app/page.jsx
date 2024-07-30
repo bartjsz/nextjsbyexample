@@ -16,7 +16,7 @@ export default function HomePage() {
       >
         <Link href="/reviews/stardew" className="flex flex-col sm:flex-row">
           <img
-            src="/images/stardew-valley.jpg"
+            src="/images/stardew.jpg"
             alt=""
             width="320"
             height="180"

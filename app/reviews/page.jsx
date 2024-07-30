@@ -5,7 +5,7 @@ import { getReviews } from "../../lib/reviews.js";
 
 export default async function ReviewsPage() {
   const reviews = await getReviews();
-  console.log("[reviewspage reviews]", reviews);
+  // console.log("[reviewspage reviews]", reviews);
 
   return (
     <>
@@ -26,7 +26,7 @@ export default async function ReviewsPage() {
         <li className="border w-80 rounded shadow hover:shadow-xl bg-white">
           <Link href="/reviews/stardew">
             <img
-              src="/images/stardew-valley.jpg"
+              src="/images/stardew.jpg"
               alt=""
               width="320"
               height="180"
