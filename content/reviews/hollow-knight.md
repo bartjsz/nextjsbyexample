@@ -1,3 +1,9 @@
+---
+title: "Stardew Valley"
+date: "2023-05-04"
+image: "/images/stardew-valley.jpg"
+---
+
 **hollow knight** is a 2016 farm life simulation role-playing video game developed by Eric "ConcernedApe" Barone. Players take the role of a character who inherits their deceased grandfather's dilapidated farm in a place known as hollow knight. The game was originally released for Windows in February 2016 before being ported to other platforms.
 
 <br>

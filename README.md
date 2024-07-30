@@ -76,3 +76,11 @@ npm install marked
 <!-- https://tailwindcss.com/docs/plugins -->
 
 npm install -D @tailwindcss/typography
+
+---
+
+https://www.npmjs.com/package/gray-matter/v/1.2.3
+
+<!-- Step 4: Use The JSON Data
+https://vercel.com/guides/loading-static-file-nextjs-api-route
+import { readFile } from "node:fs/promises"; -->

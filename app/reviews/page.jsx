@@ -1,9 +1,12 @@
 // const HomePage: React.FC = () => {} ;
 import Link from "next/link";
 import Heading from "../../components/Heading";
+import { getReviews } from "../../lib/reviews.js";
 
-export default function ReviewsPage() {
-  console.log("[HomePage] rendering");
+export default async function ReviewsPage() {
+  const reviews = await getReviews();
+  console.log("[reviewspage reviews]", reviews);
+
   return (
     <>
       <Heading>Reviews</Heading>
