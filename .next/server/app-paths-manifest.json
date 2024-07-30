@@ -1,5 +1,6 @@
 {
   "/page": "app/page.js",
-  "/reviews/stardew/page": "app/reviews/stardew/page.js",
-  "/reviews/page": "app/reviews/page.js"
+  "/reviews/page": "app/reviews/page.js",
+  "/reviews/hollowknight/page": "app/reviews/hollowknight/page.js",
+  "/reviews/stardew/page": "app/reviews/stardew/page.js"
 }
