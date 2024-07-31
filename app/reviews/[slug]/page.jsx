@@ -2,8 +2,9 @@
 import Heading from "../../../components/Heading";
 import { getReview } from "../../../lib/reviews";
 
-export default async function Stardew(slug) {
-  const review = await getReview("stardew");
+export default async function ReviewPage({ params: { slug } }) {
+  console.log(slug);
+  const review = await getReview(slug);
 
   return (
     <>
@@ -16,7 +17,6 @@ export default async function Stardew(slug) {
         height="360"
         className="mb-2 rounded"
       />
-
       {/* dont do this in projects */}
       <article
         dangerouslySetInnerHTML={{ __html: review.body }}

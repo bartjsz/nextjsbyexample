@@ -5,7 +5,7 @@ import Heading from "../components/Heading";
 // but create next app tool will automatically config path for you
 
 export default function HomePage() {
-  console.log("[HomePage] rendering");
+  // console.log("[HomePage] rendering");
   return (
     <>
       <Heading>Indie Gamer</Heading>
