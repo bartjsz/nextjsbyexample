@@ -110,3 +110,7 @@ reviews.sort((a, b) => b.date.localeCompare(a.date));
 reviews.sort((a, b) => a.date.localeCompare(b.date));
 
 ---
+
+<!-- meta data nextjs-->
+
+<!-- https://nextjs.org/learn/dashboard-app/adding-metadata -->

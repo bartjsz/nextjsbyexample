@@ -1,9 +1,9 @@
 {
   "pages": {
-    "/reviews/page": [
+    "/reviews/[slug]/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/reviews/page.js"
+      "static/chunks/app/reviews/[slug]/page.js"
     ],
     "/reviews/layout": [
       "static/chunks/webpack.js",
@@ -20,11 +20,6 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/page.js"
-    ],
-    "/_not-found/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/_not-found/page.js"
     ]
   }
 }

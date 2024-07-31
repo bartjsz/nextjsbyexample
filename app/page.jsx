@@ -6,6 +6,14 @@ import Heading from "../components/Heading";
 
 import { getFeaturedReview } from "../lib/reviews";
 
+// sets meta tag <title></title> in the <head> of the document html
+// <meta name="description" content="Only the best Indie, games"></meta>
+// https://nextjs.org/learn/dashboard-app/adding-metadata
+export const metadata = {
+  title: "Indie Gamer",
+  description: "Only the best Indie, games",
+};
+
 export default async function HomePage() {
   const review = await getFeaturedReview();
   return (
