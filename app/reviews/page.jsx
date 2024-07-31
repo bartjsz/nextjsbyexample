@@ -5,8 +5,6 @@ import { getReviews } from "../../lib/reviews.js";
 
 export default async function ReviewsPage() {
   const reviews = await getReviews();
-  // console.log("[reviewspage reviews]", reviews);
-  console.log("reviewslug", reviews.slug);
 
   return (
     <>

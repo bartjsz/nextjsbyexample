@@ -1,10 +1,12 @@
 // const HomePage: React.FC = () => {} ;
 import Heading from "../../../components/Heading";
-import { getReview } from "../../../lib/reviews";
+import { getReview, getSlugs } from "../../../lib/reviews";
+
 // generateStaticParams to build static site generate httml
 // get static pages even when using a dynamic root
 export async function generateStaticParams() {
-  return [{ slug: "hellblade" }, { slug: "hollow-knight" }];
+  const slugs = await getSlugs();
+  return slugs.map((slug) => ({ slug }));
 }
 
 export default async function ReviewPage({ params: { slug } }) {
