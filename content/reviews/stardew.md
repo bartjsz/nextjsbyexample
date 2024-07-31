@@ -1,6 +1,6 @@
 ---
 title: "Stardew"
-date: "2023-05-04"
+date: "2023-10-04"
 image: "/images/stardew.jpg"
 ---
 
