@@ -11,6 +11,7 @@ export async function generateStaticParams() {
 
 export default async function ReviewPage({ params: { slug } }) {
   // console.log(slug);
+
   const review = await getReview(slug);
 
   return (

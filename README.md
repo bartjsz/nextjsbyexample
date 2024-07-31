@@ -87,3 +87,15 @@ import { readFile } from "node:fs/promises"; -->
 
 check which version it came out
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/endsWith
+
+<!-- // comparing dates
+let date1 = new Date('2024-08-01').toLocaleDateString('en-US');
+let date2 = new Date('2024-08-02').toLocaleDateString('en-US');
+
+if (date1.localeCompare(date2) < 0) {
+console.log('date1 is earlier than date2');
+} else if (date1.localeCompare(date2) > 0) {
+console.log('date1 is later than date2');
+} else {
+console.log('date1 is the same as date2');
+} -->
