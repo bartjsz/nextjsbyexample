@@ -112,5 +112,8 @@ reviews.sort((a, b) => a.date.localeCompare(b.date));
 ---
 
 <!-- meta data nextjs-->
+<!-- read about open graph  and standard metadata names defined in html specification -->
 
 <!-- https://nextjs.org/learn/dashboard-app/adding-metadata -->
+
+<!-- https://www.freecodecamp.org/news/what-is-open-graph-and-how-can-i-use-it-for-my-website/ -->

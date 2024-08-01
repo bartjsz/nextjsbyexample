@@ -9,6 +9,20 @@ interface LayoutProps {
   children: ReactNode;
 }
 
+// sets meta tag <title></title> in the <head> of the document html
+// <meta name="description" content="Only the best Indie, games"></meta>
+// https://nextjs.org/learn/dashboard-app/adding-metadata
+// export const metadata = {
+//   title: "Indie Gamer",
+//   // description: "Only the best Indie, games",
+// };
+
+// %s is a placeholder that will be replaced by title
+export const metadata = {
+  default: "About | Indie Gamer",
+  template: "%s | Indie Gamer",
+};
+
 export default function RootLayout({ children }: LayoutProps) {
   return (
     <html lang="en" className={orbitron.variable}>
