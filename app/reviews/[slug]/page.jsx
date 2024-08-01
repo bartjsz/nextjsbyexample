@@ -4,19 +4,21 @@ import { getReview, getSlugs } from "../../../lib/reviews";
 
 // generateStaticParams to build static site generate httml
 // get static pages even when using a dynamic root
-// export async function generateStaticParams() {
-//   const slugs = await getSlugs();
-//   return slugs.map((slug) => ({ slug }));
-// }
+export async function generateStaticParams() {
+  const slugs = await getSlugs();
+  return slugs.map((slug) => ({ slug }));
+}
 
-export const metadata = {
-  title: "Reviews",
-};
+export async function generateMetadata({ params: { slug } }) {
+  const review = await getReview(slug);
+  return {
+    title: review.title,
+  };
+}
 
 export default async function ReviewPage({ params: { slug } }) {
-  // console.log(slug);
-
   const review = await getReview(slug);
+  console.log("[ReviewPage] rendering", slug);
 
   return (
     <>
