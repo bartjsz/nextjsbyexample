@@ -12,8 +12,9 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params: { slug } }) {
   const review = await getReview(slug);
+  console.log("review:", review.title);
   return {
-    title: review.title,
+    title: "Indie Gamer | " + review.title,
   };
 }
 

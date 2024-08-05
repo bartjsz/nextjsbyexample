@@ -19,8 +19,9 @@ interface LayoutProps {
 
 // %s is a placeholder that will be replaced by title
 export const metadata = {
-  default: "About | Indie Gamer",
-  template: "%s | Indie Gamer",
+  // default: "About | Indie Gamer",
+  // template: "%s | Indie Gamer",
+  title: "Indie Gamer",
 };
 
 export default function RootLayout({ children }: LayoutProps) {
