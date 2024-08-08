@@ -5,6 +5,8 @@ export default function ShareLinkButton() {
     console.log("clicked!");
   };
 
+  console.log("[ShareLinkButton] rendering");
+
   return (
     <button
       onClick={handleClick}
